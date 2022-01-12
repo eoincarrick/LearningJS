@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "name": "Rocky Essel",
+      "age": 22,
+      "gender": "Male",
+      "isProgrammer": true,
+      "skills": ["HTML", "CSS", "JS", "ReactJS", "JSON"],
+      "address": {
+        "city": "Accra",
+        "state": "Ghana",
+        "B.O.Post": "A0/11"
+      }
+    },
+    {
+      "name": "Christa Doe",
+      "age": 22,
+      "gender": "Female",
+      "isProgrammer": false,
+      "skills": ["JSON"],
+      "address": {
+        "city": "Accra",
+        "state": "Ghana",
+        "B.O.Post": "A0/11"
+      }
+    },
+    {
+      "name": "Kendrick Marful",
+      "age": 22,
+      "isProgrammer": true,
+      "skills": ["ReactJS", "JSON"],
+      "address": {
+        "city": "Accra",
+        "state": "Ghana",
+        "B.O.Post": "A0/11"
+      }
+    },
+    {
+      "name": "Eoin Carrick",
+      "age": 22,
+      "gender": "Male",
+      "isProgrammer": false,
+      "skills": ["HTML", "JS", "ReactJS", "JSON"],
+      "address": {
+        "city": "Lagon",
+        "state": "Ghana",
+        "B.O.Post": "G0/11"
+      }
+    },
+    {
+      "name": "Michael Tetteh",
+      "age": 22,
+      "gender": "Male",
+      "isProgrammer": true,
+      "skills": ["HTML", "CSS", "JS", "ReactJS"],
+      "address": {
+        "city": "Tema",
+        "state": "Ghana",
+        "B.O.Post": "ER/11"
+      }
+    },
+    {
+      "name": "Kwame Joe",
+      "age": 22,
+      "gender": "Male",
+      "isProgrammer": true,
+      "skills": ["HTML", "CSS", "ReactJS", "JSON"],
+      "address": {
+        "city": "Accra",
+        "state": "Ghana",
+        "B.O.Post": "DF34/WER"
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-var a = Symbol("foo");
-console.log(String(a));
+var as = Symbol("foo");
+console.log(String(as));
 
 //object
 var myCar = {
@@ -85,7 +85,16 @@ console.log(`${name}, ${age}, ${gender}, ${color}, ${hairColor}, ${eyeColor}`);
 
 // Passing fucntion as argument to another function in JS
 
-function foo() {
-  console.log("This is foo");
+function foo(x, y, z) {
+  console.log("This is foo", x, y, z);
 }
-foo();
+
+function a() {
+  console.log("This is a");
+  return "This is the return of a";
+}
+
+var b = 10;
+var c = 20;
+
+foo(a(), b, c);
