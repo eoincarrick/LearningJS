@@ -265,6 +265,22 @@ console.log(getFirstName);
 // Is there at least one male character?
 const oneMale = character.some((char) => char.gender === "male");
 console.log(oneMale);
+
 // Is there at least one character with blue eyes?
-// Is there at least one character taller than 200?
+const oneWithBlueEye = character.some((char) => char.eye_color === "blue");
+console.log(oneWithBlueEye);
+
+// Is there at least one character taller than 300?
+const moreThan300 = character.some((char) => char.height > 300);
+console.log(moreThan300);
+
 // Is there at least one character that has mass less than 50?
+const lessThan50 = character.some((char) => char.mass < 50);
+console.log(lessThan50);
+
+// Array Method: sort()
+
+// Sort by name
+// Sort by mass
+// Sort by height
+// Sort by gender
