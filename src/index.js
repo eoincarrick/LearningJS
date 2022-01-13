@@ -101,6 +101,10 @@ var c = 20;
 
 foo(a(), b, c);
 
+/////////////////////////////////////////////////////////////////////
+//ArrayMehtods //////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
 //JS Array Filter Method
 
 // So from my understanding, the correct syntax for the "ArrayMethod" is
@@ -239,9 +243,28 @@ console.log(getName);
 const getTheHight = character.map((char) => char.height);
 console.log(getTheHight);
 
-// We can also display name and height n
+// In this Map method we can also display name and height
+// of all the value inside the "character"
 const minifiedRec = character.map((char) => ({
   name: char.name,
   height: char.height
 }));
 console.log(minifiedRec);
+
+// In this Map method we are trying to display the first name
+// of all the value inside the "character"
+const getFirstName = character.map((char) => char.name.split(" ")[0]);
+console.log(getFirstName);
+
+// Array Some methods
+
+// The ".some" array is an array that only, only returns a true or false
+// when a certain condition is met. So the only thing that ".some" array does,
+// is to check if inside a block statement, the code that's been excuted is true or false
+
+// Is there at least one male character?
+const oneMale = character.some((char) => char.gender === "male");
+console.log(oneMale);
+// Is there at least one character with blue eyes?
+// Is there at least one character taller than 200?
+// Is there at least one character that has mass less than 50?
