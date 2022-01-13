@@ -180,7 +180,7 @@ console.log(getLength);
 // In this filter method we are trying to display an object
 // that has a "char.eye_color" more or greater than "red".
 const getEyeColor = characters.filter((char) => {
-  return char.eye_color === "red";
+  return char.eye_color === "blue";
 });
 console.log(getEyeColor);
 
@@ -194,5 +194,54 @@ const namesOfPeople = [
   "Carrick",
   "Michael",
   "John",
+  "Rita",
+  "Doe",
+  "Eugene",
+  "Eric",
+  "Theoplius",
+  "Essel",
+  "Rocky",
   "Sarah"
 ];
+
+const nlen = namesOfPeople.map((len) => len.length);
+console.log(nlen);
+
+//Examples For Understanding the index, item, and array
+// let numLength = namesOfPeople.length - 1;
+// console.log(numLength);
+// const returnIndex = namesOfPeople.map((item, index) => index);
+// console.log(
+//   `Here is the number from ${returnIndex.filter(
+//     (n) => n === 0
+//   )} to ${returnIndex.filter(
+//     (n) => n === numLength
+//   )}, therefore the second parameter is a "number index".`
+// );
+
+const character = [...characters];
+console.log(character[0].name.split(" ")[0]);
+
+// In this Map method we are trying to display the "names"
+// of all the value inside the "character".
+const getName = character.map((char) => char.name);
+console.log(getName);
+///////////////////////////////////////////////////////////////////////
+//Explaining The Code Above
+// Now the "character" is now having the same data to "characters"
+// therefore, the Map Array Method, take the callback function, and we name that fucntion as "char"
+//so now "char" has the same value as the character, then it letrate through it to give us the
+//data or value we want.
+///////////////////////////////////////////////////////////////////////
+
+// In this Map method we are trying to display the height
+// of all the value inside the "character"
+const getTheHight = character.map((char) => char.height);
+console.log(getTheHight);
+
+// We can also display name and height n
+const minifiedRec = character.map((char) => ({
+  name: char.name,
+  height: char.height
+}));
+console.log(minifiedRec);
