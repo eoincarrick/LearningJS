@@ -1,3 +1,5 @@
+// LEARNING JS AGAIN FOR BETTER UNDERSTANDING
+
 var as = Symbol("foo");
 console.log(String(as));
 
