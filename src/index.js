@@ -98,3 +98,81 @@ var b = 10;
 var c = 20;
 
 foo(a(), b, c);
+
+//JS Array Filter Method
+
+const characters = [
+  {
+    name: "Luke Skywalker",
+    height: "172",
+    mass: "77",
+    eye_color: "blue",
+    gender: "male"
+  },
+  {
+    name: "Darth Vader",
+    height: "202",
+    mass: "136",
+    eye_color: "yellow",
+    gender: "male"
+  },
+  {
+    name: "Leia Organa",
+    height: "150",
+    mass: "49",
+    eye_color: "brown",
+    gender: "female"
+  },
+  {
+    name: "Anakin Skywalker",
+    height: "188",
+    mass: "84",
+    eye_color: "blue",
+    gender: "male"
+  }
+];
+
+// In this filter method we are trying to display an object
+// that has a "char.mass" more or greater than "100".
+const moreThan100 = characters.filter((char) => {
+  return char.mass > 100;
+});
+console.log(moreThan100);
+
+//Now in the "characters" contains  a set of objects and
+//each object has a value. Now with the "Filter Method", we
+// are able to take some of these objects off if they don't
+// meet a certain condition.
+// The above examples filter only "chatracter.mass" that are "more than 100".
+// Meaning it returns any number that is greater than 100, and
+// removes objects with "character.mass" of less than 100.
+
+// In this filter method we are trying to display an object
+// that has a "char.gender" strictly equla to "male".
+const getGender = characters.filter((char) => {
+  return char.gender === "male";
+});
+console.log(getGender);
+
+// In this filter method we are trying to display an object
+// that has a "char.height" more or greater than "170".
+const getHight = characters.filter((char) => {
+  return char.height > 170;
+});
+console.log(getHight);
+
+// In this filter method we are trying to display an object
+// that has a "name.length" more or greater than "14".
+const getLength = characters.filter((char) => {
+  return char.name.length > 14;
+});
+console.log(getLength);
+
+// In this filter method we are trying to display an object
+// that has a "char.eye_color" more or greater than "red".
+const getEyeColor = characters.filter((char) => {
+  return char.eye_color === "red";
+});
+console.log(getEyeColor);
+
+//JS Array Map Method+
