@@ -103,6 +103,13 @@ foo(a(), b, c);
 
 //JS Array Filter Method
 
+// So from my understanding, the correct syntax for the "ArrayMethod" is
+// "const String = objectName.ArrayMethod(function(item, index){
+// return aStatement
+// })"
+// Then they simplified it to "const string = objectName.Arraymethod((item, index) => {return aStatement}
+// then further made to "const String = objectName.ArrayMethod((item, index)=> (item,index))"
+
 const characters = [
   {
     name: "Luke Skywalker",
@@ -177,4 +184,15 @@ const getEyeColor = characters.filter((char) => {
 });
 console.log(getEyeColor);
 
-//JS Array Map Method+
+//JS Array Map Method
+
+const namesOfPeople = [
+  "Bismark",
+  "Mary",
+  "Gwen",
+  "Eoin",
+  "Carrick",
+  "Michael",
+  "John",
+  "Sarah"
+];
