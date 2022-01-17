@@ -284,3 +284,40 @@ console.log(lessThan50);
 // Sort by mass
 // Sort by height
 // Sort by gender
+
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+
+for (let i = 0; i < myArr.length; i++) {
+  console.log(myArr[i]);
+}
+
+//////////////
+//7 Hours
+////////////
+
+//function
+
+// function fun() {
+//   let nameSaying = "Carrick";
+//   prompt(`Hello `);
+// }
+
+// fun();
+
+// function sayName() {
+//   let nameSaying = "Carrick";
+//   console.log(`Hello ${nameSaying}`);
+// }
+// sayName();
+
+//While loops
+
+var num = 0;
+while (num < 100) {
+  num += 1;
+  num = num + 1;
+  console.log(num);
+}
