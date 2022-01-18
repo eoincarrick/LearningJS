@@ -321,3 +321,21 @@ while (num < 100) {
   num = num + 1;
   console.log(num);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const div = document.querySelector("div");
+
+div.addEventListener("click", () => {
+  name = prompt("what is your first name");
+  const h1 = document.createElement("h1");
+  h1.setAttribute("id", "headerOne");
+  div.appendChild(h1).textContent = `okay ${name}`;
+});
+
+const remove = document.querySelector(".remove");
+
+remove.addEventListener("click", () => {
+  const id = document.querySelector("#headerOne");
+  id.remove();
+});
